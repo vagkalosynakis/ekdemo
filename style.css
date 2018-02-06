@@ -11,6 +11,10 @@ html {
     background: #FF0000;
 }
 
+footer{
+	width: 100%;
+}
+
 body{
 		padding: 20px 0 0 0;
 }
@@ -47,6 +51,75 @@ header .jumbotron .container h2{
     text-shadow: 2px 2px 4px #000000;
 }
 
-button .custom {
+#canvas {
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	height:330px;
+	width:100%;}
 
+.btn {
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.c1{
+	color: white;
+	background-color: #0000ff;
+}
+.c2{
+	color: white;
+	background-color: #669999;
+}
+.c3{
+	color: white;
+	background-color: #00ccff;
+}
+.c4{
+	color: white;
+	background-color: #666699;
+}
+.c5{
+	color: white;
+	background-color: #339966;
+}
+.c6{
+	color: white;
+	background-color: #00ffff;
+}
+.c7{
+	color: white;
+	background-color: #6699ff;
+}
+.c8{
+	color: white;
+	background-color: #006600;
+}
+.c9{
+	color: white;
+	background-color: #00ff00;
+}
+.c10{
+	color: white;
+	background-color: #cc33ff;
+}
+.c11{
+	color: white;
+	background-color: #99ff99;
+}
+.c12{
+	color: white;
+	background-color: #ff33cc;
+}
+.c13{
+	color: white;
+	background-color: #333300;
+}
+.c14{
+	color: white;
+	background-color: #ffff00;
+}
+.c15{
+	color: white;
+	background-color: #ff0000;
 }
