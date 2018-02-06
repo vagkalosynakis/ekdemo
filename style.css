@@ -1,0 +1,52 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body{
+		padding: 20px 0 0 0;
+}
+
+@media (max-width: 990px){
+	  .navbar .container .nav a{
+	    font-size: 85%;
+	}
+}
+.well li {
+    display: block;
+}
+
+.well li:before {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #000000;
+}
+
+header .jumbotron{
+	height:300px;
+	background-image: url("./images/server.png");
+	background-size: cover;
+	background-position: center;
+	color:white;
+}
+
+header .jumbotron .container h2{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+button .custom {
+
+}
