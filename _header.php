@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>EK demonstration</title>
@@ -12,6 +11,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="./scripts/coloring.js"></script>
+	<script type="text/javascript" src="./scripts/searchfilter.js"></script>
 
 </head>
 
@@ -29,10 +29,11 @@
 				</div>
 				<div class="collapse navbar-collapse" id="example">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="education.html">Education</a></li>
-						<li><a href="experience.html">Experience</a></li>
-						<li><a href="">JS Demo</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="education.php">Education</a></li>
+						<li><a href="experience.php">Experience</a></li>
+						<li><a href="js.php">JS Demo</a></li>
+						<li><a href="tables.php">SQL/Json</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b><span class="caret"></span></a>
@@ -69,58 +70,26 @@
 								</div>
 					        </ul>
 						</li>
+						<?php if(true){ ?>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Logout</b><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<div style="margin: 0 10px;">
+									<form action="/action_page.php">
+									  <div class="form-group">
+									    <label for="email">Email address:</label>
+									    <input type="email" class="form-control" id="email">
+									  </div>
+									  <div class="form-group">
+									    <label for="pwd">Password:</label>
+									    <input type="password" class="form-control" id="pwd">
+									  </div>
+									  <button type="submit" class="btn btn-default">Submit</button>
+									</form>
+								</div>
+					        </ul>
+						</li>
+						<?php }?>
 					</ul>
 				</div>
 			</div>
 		</div>
-		
-		<div class="jumbotron">
-			<div class="container">
-				<h2><i>A bit of JavaScript.</i></h2>
-			</div> 
-		</div> 
-	</header>
-
-<!-- Main Content -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6">
-				<div class="well well-sm">
-					<h3 style="text-align: center;">Change color using JS.</h3>
-					<div class="btn-group" style="padding:20px; display:flex; justify-content: center;">
-					  <button type="button" class="btn btn-lg c1" onclick="changeColor('#0000ff')">Color</button>
-					  <button type="button" class="btn btn-lg c2" onclick="changeColor('#669999')">Color</button>
-					  <button type="button" class="btn btn-lg c3" onclick="changeColor('#00ccff')">Color</button>
-					  <button type="button" class="btn btn-lg c4" onclick="changeColor('#666699')">Color</button>
-					  <button type="button" class="btn btn-lg c5" onclick="changeColor('#ff0000')">Color</button>
-					</div>
-					<div class="btn-group" style="padding:20px; display:flex; justify-content: center;">
-					  <button type="button" class="btn btn-lg c6" onclick="changeColor('#339966')">Color</button>
-					  <button type="button" class="btn btn-lg c7" onclick="changeColor('#00ffff')">Color</button>
-					  <button type="button" class="btn btn-lg c8" onclick="changeColor('#6699ff')">Color</button>
-					  <button type="button" class="btn btn-lg c9" onclick="changeColor('#006600')">Color</button>
-					  <button type="button" class="btn btn-lg c10" onclick="hangeColor('#00ff00')">Color</button>
-					</div><div class="btn-group" style="padding:20px; display:flex; justify-content: center;">
-					  <button type="button" class="btn btn-lg c11" onclick="changeColor('#cc33ff')">Color</button>
-					  <button type="button" class="btn btn-lg c12" onclick="changeColor('#99ff99')">Color</button>
-					  <button type="button" class="btn btn-lg c13" onclick="changeColor('#ff33cc')">Color</button>
-					  <button type="button" class="btn btn-lg c14" onclick="changeColor('#333300')">Color</button>
-					  <button type="button" class="btn btn-lg c15" onclick="changeColor('#ffff00')">Color</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6">
-				<div id="canvas" class="well"></div>
-			</div>
-		</div>
-
-<!-- FOOTER -->
-	<footer>
-		<div class="jumbotron">
-			<div class="container">
-				<h2>Hello</h2>
-			</div>
-		</div>
-	</footer>
-</body>
-</html>
