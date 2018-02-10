@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include_once "_header.php"
 ?>	
 
@@ -12,13 +13,20 @@
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
+		<?php if(isset($_SESSION['u_id'])){ ?>
 		<div class="col-xs-12 col-sm-12 col-md-12">
-			<button class="btn btn-primary btn-lg btn-block" data-toggle="collapse" data-target="#Foo">Toggle Bar</button>
+			<div class="well">
+				<h2 style="text-align: center;">You are logged in!</h2>
+			</div>
+		</div>
+		<?php }?>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<button class="btn btn-lg btn-block tablebtn" data-toggle="collapse" data-target="#Foo">Toggle Bar</button>
 			<div id="Foo" class="collapse">
 			    <h2 style="text-align: center;">Bordered Table</h2>
 			    <input type="text" id="filter" onkeyup="searchTable()" placeholder="Search for names.." class="col-xs-12">
-
-			    <?php if(1==1){ ?>
 				<table id="users" class="table table-striped table-hover table-condensed table-responsive">
 					<thead>
 						<tr>
@@ -55,11 +63,10 @@
 						</tr>
 					</tbody>
 				</table>
-				<?php } ?>
 			</div>
 		</div>
 	</div>
-
+</div>
 <?php
 	include_once "_footer.php"
 ?>

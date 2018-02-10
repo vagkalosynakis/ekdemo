@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include_once "_header.php"
 ?>			
 	<div class="jumbotron">
@@ -10,6 +11,15 @@
 
 <!-- Main Content -->
 <div class="container">
+	<div class="row">
+		<?php if(isset($_SESSION['u_id'])){ ?>
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="well">
+				<h2 style="text-align: center;">You are logged in!</h2>
+			</div>
+		</div>
+		<?php }?>
+	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12">
 			<div class="well"><strong>January 2018 - Present: <i>1st Line Customer Support at TeamKnowHow (Dixons)</i> :</strong>

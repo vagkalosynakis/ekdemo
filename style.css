@@ -3,20 +3,16 @@ html {
     overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px;
+    background: transparent;
 }
-/* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
 
-footer{
-	width: 100%;
-}
-
-body{
+body {
 		padding: 20px 0 0 0;
+		background-color: #cccccc !important;
 }
 
 @media (max-width: 990px){
@@ -24,6 +20,12 @@ body{
 	    font-size: 85%;
 	}
 }
+
+.well {
+	 background: #ffffff !important;
+	 box-shadow: 4px 4px 20px #888888 !important;
+}
+
 .well li {
     display: block;
 }
@@ -55,6 +57,14 @@ header .jumbotron .container h2{
 	margin-top: 5px;
 	padding-top: 5px;
 }
+.btn-primary{
+	margin: 7px 7px auto;
+	border-radius: 10px;
+}
+.tablebtn{
+	color: white;
+	background-color: #5e9bff;
+}
 
 #canvas {
 	text-align: center;
@@ -68,63 +78,33 @@ header .jumbotron .container h2{
 	text-shadow: 2px 2px 4px #000000;
 }
 
-.c1{
-	color: white;
-	background-color: #0000ff;
+.c1{color: white;background-color: #0000ff;
 }
-.c2{
-	color: white;
-	background-color: #669999;
+.c2{color: white;background-color: #669999;
 }
-.c3{
-	color: white;
-	background-color: #00ccff;
+.c3{color: white;background-color: #00ccff;
 }
-.c4{
-	color: white;
-	background-color: #666699;
+.c4{color: white;background-color: #666699;
 }
-.c5{
-	color: white;
-	background-color: #ff0000;
+.c5{color: white;background-color: #ff0000;
 }
-.c6{
-	color: white;
-	background-color: #339966;
+.c6{color: white;background-color: #339966;
 }
-.c7{
-	color: white;
-	background-color: #00ffff;
+.c7{color: white;background-color: #00ffff;
 }
-.c8{
-	color: white;
-	background-color: #6699ff;
+.c8{color: white;background-color: #6699ff;
 }
-.c9{
-	color: white;
-	background-color: #006600;
+.c9{color: white;background-color: #006600;
 }
-.c10{
-	color: white;
-	background-color: #00ff00;
+.c10{color: white;background-color: #00ff00;
 }
-.c11{
-	color: white;
-	background-color: #cc33ff;
+.c11{color: white;background-color: #cc33ff;
 }
-.c12{
-	color: white;
-	background-color: #99ff99;
+.c12{color: white;background-color: #99ff99;
 }
-.c13{
-	color: white;
-	background-color: #ff33cc;
+.c13{color: white;background-color: #ff33cc;
 }
-.c14{
-	color: white;
-	background-color: #333300;
+.c14{color: white;background-color: #333300;
 }
-.c15{
-	color: white;
-	background-color: #ffff00;
+.c15{color: white;background-color: #ffff00;
 }
