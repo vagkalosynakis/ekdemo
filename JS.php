@@ -36,7 +36,7 @@
 				  <button type="button" class="btn btn-lg c7" onclick="changeColor('#00ffff')">Color</button>
 				  <button type="button" class="btn btn-lg c8" onclick="changeColor('#6699ff')">Color</button>
 				  <button type="button" class="btn btn-lg c9" onclick="changeColor('#006600')">Color</button>
-				  <button type="button" class="btn btn-lg c10" onclick="hangeColor('#00ff00')">Color</button>
+				  <button type="button" class="btn btn-lg c10" onclick="changeColor('#00ff00')">Color</button>
 				</div>
 				<div class="btn-group" style="padding:20px; display:flex; justify-content: center;">
 				  <button type="button" class="btn btn-lg c11" onclick="changeColor('#cc33ff')">Color</button>

@@ -23,11 +23,19 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12">
-			<button class="btn btn-lg btn-block tablebtn" data-toggle="collapse" data-target="#Foo">Toggle Bar</button>
+			<button class="btn btn-primary btn-block tablebtn" data-toggle="collapse" data-target="#Foo">Toggle Bar</button>
 			<div id="Foo" class="collapse">
 			    <h2 style="text-align: center;">Bordered Table</h2>
 			    <input type="text" id="filter" onkeyup="searchTable()" placeholder="Search for names.." class="col-xs-12">
 				<table id="users" class="table table-striped table-hover table-condensed table-responsive">
+					<thead>
+			            <tr>
+			                <th data-field="id" data-sortable="true">Item ID</th>
+			                <th data-field="Name">Item Name</th>
+			                <th data-field="Address">Item Price</th>
+			            </tr>
+			        </thead>
+					<!--
 					<thead>
 						<tr>
 							<th class="col-xs-3">Firstname</th>
@@ -62,6 +70,7 @@
 							<td class="col-xs-6">john@example.com</td>
 						</tr>
 					</tbody>
+				-->
 				</table>
 			</div>
 		</div>
