@@ -21,61 +21,64 @@
 		</div>
 		<?php }?>
 	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12">
-			<button class="btn btn-primary btn-block tablebtn" data-toggle="collapse" data-target="#Foo">Toggle Bar</button>
-			<div id="Foo" class="collapse">
-			    <h2 style="text-align: center;">Bordered Table</h2>
-			    <input type="text" id="filter" onkeyup="searchTable()" placeholder="Search for names.." class="col-xs-12">
-				<table id="users" class="table table-striped table-hover table-condensed table-responsive">
+	<div class="row well">
+		<!-- Table 1 -->
+		<div class="col-xs-12 col-sm-12 col-md-6">
+			<button class="btn btn-primary btn-block tablebtn" data-toggle="collapse" data-target="#table1">Collapse</button>
+			<div id="table1" class="collapse in">
+			    <h2 style="text-align: center;">Expanded Table 1</h2>
+			    <input type="text" id="usersFilter" onkeyup="searchTable()" placeholder="Search for names.." class="col-xs-12">
+				<table 	id="users" class="table table-striped table-hover table-condensed">
 					<thead>
 			            <tr>
-			                <th data-field="id" data-sortable="true">Item ID</th>
-			                <th data-field="Name">Item Name</th>
-			                <th data-field="Address">Item Price</th>
+			                <th class="col-xs-1 col-sm-1 col-md-1" data-field="id" data-sortable="true">Item ID</th>
+			                <th class="col-xs-5 col-sm-5 col-md-5" data-field="Name" data-sortable="true">Item Name</th>
+			                <th class="col-xs-6 col-sm-6 col-md-6" data-field="Address" data-sortable="true">address</th>
 			            </tr>
 			        </thead>
-					<!--
+				</table>
+			</div>
+		</div>
+		<!-- Table 2 -->
+		<div class="col-xs-12 col-sm-12 col-md-6">
+			<button class="btn btn-primary btn-block tablebtn" data-toggle="collapse" data-target="#table2">Collapse</button>
+			<div id="table2" class="collapse in">
+			    <h2 style="text-align: center;">Expanded Table 1</h2>
+			    <input type="text" id="carsFilter" onkeyup="searchTable()" placeholder="Search for makes.." class="col-xs-12">
+
+				<table 	id="cars" class="table table-striped table-hover table-condensed">
 					<thead>
-						<tr>
-							<th class="col-xs-3">Firstname</th>
-							<th class="col-xs-3">Lastname</th>
-							<th class="col-xs-6">Email</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="col-xs-3">John</td>
-							<td class="col-xs-3">Doe</td>
-							<td class="col-xs-6">john@example.com</td>
-						</tr>
-						<tr>
-							<td class="col-xs-3">Mary</td>
-							<td class="col-xs-3">Moe</td>
-							<td class="col-xs-6">mary@example.com</td>
-						</tr>
-						<tr>
-							<td class="col-xs-3">July</td>
-							<td class="col-xs-3">Dooley</td>
-							<td class="col-xs-6">july@example.com</td>
-						</tr>
-						<tr>
-							<td class="col-xs-3">John</td>
-							<td class="col-xs-3">Doe</td>
-							<td class="col-xs-6">john@example.com</td>
-						</tr>
-						<tr>
-							<td class="col-xs-3">John</td>
-							<td class="col-xs-3">Doe</td>
-							<td class="col-xs-6">john@example.com</td>
-						</tr>
-					</tbody>
-				-->
+			            <tr>
+			                <th class="col-xs-4 col-sm-4 col-md-4" data-field="Make" data-sortable="true">Make</th>
+			                <th class="col-xs-6 col-sm-6 col-md-6" data-field="Model" data-sortable="true">Model</th>
+			                <th class="col-xs-5 col-sm-5 col-md-5" data-field="Color" data-sortable="true">Color</th>
+			            </tr>
+			        </thead>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Table 3 -->
+	<div class="row well">
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<button class="btn btn-primary btn-block tablebtn" data-toggle="collapse" data-target="#table3">Expand</button>
+			<div id="table3" class="collapse">
+			    <h2 style="text-align: center;">Collapsed Table</h2>
+			    <input type="text" id="rdFilter" onkeyup="searchTable()" placeholder="Search for rd.." class="col-xs-12">
+				<table 	id="rd" class="table table-striped table-hover table-condensed">
+					<thead>
+			            <tr>
+			                <th class="col-xs-1 col-sm-1 col-md-1" data-field="rd1" data-sortable="true">rd1</th>
+			                <th class="col-xs-5 col-sm-5 col-md-5" data-field="rd2" data-sortable="true">rd2</th>
+			                <th class="col-xs-6 col-sm-6 col-md-6" data-field="rd3" data-sortable="true">rd3</th>
+			            </tr>
+			        </thead>
 				</table>
 			</div>
 		</div>
 	</div>
 </div>
+
 <?php
 	include_once "_footer.php"
 ?>

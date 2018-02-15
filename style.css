@@ -24,6 +24,7 @@ body {
 .well {
 	 background: #ffffff;
 	 box-shadow: 4px 4px 20px #888888 !important;
+	 padding: 10px;
 }
 
 .well li {
@@ -60,9 +61,6 @@ header .jumbotron .container h2{
 .btn-primary{
 	margin: 7px 7px auto;
 	border-radius: 10px;
-}
-
-.tablebtn{color: white;background-color: #5e9bff;
 }
 
 #canvas {

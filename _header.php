@@ -10,6 +10,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="scripts/coloring.js"></script>
 	<script type="text/javascript" src="scripts/searchfilter.js"></script>
 	<script type="text/javascript" src="scripts/json.js"></script>
@@ -35,7 +36,7 @@
 						<li><a href="education.php">Education</a></li>
 						<li><a href="experience.php">Experience</a></li>
 						<li><a href="js.php">JS Demo</a></li>
-						<li><a href="tables.php">SQL/Json</a></li>
+						<li><a href="tables.php">Tables/Json</a></li>
 					</ul>
 
 					<!-- LOGIN FORM -->	
